@@ -1,0 +1,42 @@
+.assignments {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+.assignment {
+  border-bottom: 1px solid red;
+  display: block;
+  text-decoration: none;
+}
+.flex {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+.loader {
+  width: 48px;
+  height: 48px;
+  border: 5px solid #fff;
+  border-bottom-color: #ff3d00;
+  border-radius: 50%;
+  display: inline-block;
+  box-sizing: border-box;
+  animation: rotation 1s linear infinite;
+}
+
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.loader-container {
+  width: 100%;
+  min-height: 100vh;
+  background-color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
